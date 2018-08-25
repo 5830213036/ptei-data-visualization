@@ -52,7 +52,7 @@
     <div class="col-sm-8">
       <img src= "https://picsum.photos/600/300/?image=25" >
     </div>
-<!-- -->
+<!--1111 -->
   </div>
 </div>
 </div>
