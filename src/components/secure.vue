@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="" id="">
         <router-link to="/login">Sign out</router-link>
     </div>
 </template>
