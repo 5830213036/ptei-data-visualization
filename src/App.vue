@@ -20,111 +20,31 @@
   <b-img src="https://picsum.photos/1024/400/?image=41" fluid-grow />
 </div>
 <!-- search -->
-<div id="img">
-
-  <!--<b-navbar type="light" variant="light">-->
-    <b-nav-form >
-      <b-form-input class="mr-sm-2" type="text" placeholder="Search"></b-form-input>
-      <b-button variant="outline-success" class="my-2 my-sm-0" type="submit">Search</b-button>
-    </b-nav-form>
-  <!--</b-navbar>-->
-</div>
-
-<div id="blog">
-<div class="container">
-  <div class="row">
-    <div class="col-sm-8">
-      <img src= "https://picsum.photos/600/300/?image=25" >
-    </div>
-    <div class="col-sm-4">
-      <p id="text-blog">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-  </div>
-</div>
-</div>
-
-<div id="blog">
-<div class="container">
-  <div class="row">    
-    <div id="text-blog" class="col-sm-4">
-      <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-    <div class="col-sm-8">
-      <img src= "https://picsum.photos/600/300/?image=25" >
-    </div>
-
-  </div>
-</div>
-</div>
-
-<div id="blog">
-<div class="container">
-  <div class="row">
-    <div class="col-sm-8">
-      <img src= "https://picsum.photos/600/300/?image=25" >
-    </div>
-    <div class="col-sm-4">
-      <p id="text-blog">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-  </div>
-</div>
-</div>
-
+<search/>
+<!--blog-->
+<blog/>
 <!--Pagination -->
-<nav id="page">
-    <ul class="pagination pg-teal">
-        
+<pagination/>
+<!--picture-->
+<picture1/>
+<!--Footer-->
 
-        <!--Numbers-->
-        <li class="page-item active"><a class="page-link">1</a></li>
-        <li class="page-item"><a class="page-link">2</a></li>
-        <li class="page-item"><a class="page-link">3</a></li>
-        <li class="page-item"><a class="page-link">4</a></li>
-        <li class="page-item"><a class="page-link">5</a></li>
-        
-
-        <!--Arrow right-->
-        <li class="page-item">
-            <a class="page-link" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-                <span class="sr-only">Next</span>
-            </a>
-        </li>
-    </ul>
-</nav>
-
-
-<b-container fluid class="p-4 bg-dark">
-  <b-row>
-    <b-col>
-      <b-img thumbnail fluid src="https://picsum.photos/250/250/?image=54" alt="Thumbnail" />
-    </b-col>
-    <b-col>
-      <b-img thumbnail fluid src="https://picsum.photos/250/250/?image=58" alt="Thumbnail" />
-    </b-col>
-    <b-col>
-      <b-img thumbnail fluid src="https://picsum.photos/250/250/?image=59" alt="Thumbnail" />
-    </b-col>
-    <b-col>
-      <b-img thumbnail fluid src="https://picsum.photos/250/250/?image=59" alt="Thumbnail" />
-    </b-col>
-  </b-row>
-</b-container>
-
-
-
-
-        <router-view></router-view>
+<router-view></router-view>
     </div>
 </template>
 
 <script>
 import login from "./components/login.vue";
+import blog from "./components/blog.vue";
+import search from "./components/search.vue";
+import pagination from "./components/pagination.vue";
+import picture1 from "./components/picture1.vue";
 
 export default {
   name: "app",
   components: {
-    login
+    login,
+    blog,search,pagination,picture1
   },
   data() {
     return {
