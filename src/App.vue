@@ -28,7 +28,7 @@
 <!--picture-->
 <picture1/>
 <!--Footer-->
-
+<!-- -->
 <router-view></router-view>
     </div>
 </template>
