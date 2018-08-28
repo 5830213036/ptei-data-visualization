@@ -7,7 +7,7 @@
       <b-navbar-nav>
         <b-nav-item href="#">PTEI DATA VISUALIZATION</b-nav-item>
        
-        <b-nav-item-dropdown text="Admin" right>
+        <b-nav-item-dropdown text="Admin" align-self: flex-end>
           <b-dropdown-item href="">Account</b-dropdown-item>
           <b-dropdown-item href="#">Settings</b-dropdown-item>
         </b-nav-item-dropdown>
@@ -83,6 +83,7 @@ export default {
 }
 #text-blog{
   margin-top: 100px;
+  
 }
 #img{
   margin-top: 10px;
