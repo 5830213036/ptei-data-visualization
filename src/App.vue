@@ -29,6 +29,41 @@
 <picture1/>
 <!--Footer-->
 
+<div class="jumbotron text-center" >
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="row">
+      <h2>ABOUT US</h2>
+      
+      <p>Aenean vulputate nisl arcu, non consequat risus vulputate sed. Nulla eu sapien condimentum nisi aliquet sodales non et diam. Duis blandit nunc semper rutrum congue. Phasellus sed lacus ut odio vehicula varius. Etiam iaculis feugiat tortor ac ornare.</p>
+    </div>
+    <div class="row">
+      <h2>HOT TAG</h2>
+      <div class="col-sm">
+      <h5>kdmflksmdflakemsdfmkew</h5>
+    </div></div>
+    </div>
+    <div class="col-md">
+      <h2>LAST POPULAR</h2>
+      <div class="row">
+        
+          <b-col>
+              <b-img rounded blank width="150" height="90" blank-color="#777"  />
+          </b-col>
+
+               
+
+    <div class="col-md-6">
+      <p>YOUR BLOG TOURIST TRAVELLING IN PHUKET</p>
+    </div>
+  </div>
+    </div>
+    
+  </div>
+</div>
+  </div>
+
 
 <router-view></router-view>
     </div>
@@ -102,6 +137,8 @@ export default {
   width: 60%;
   
 }
+
+
 
 
 
