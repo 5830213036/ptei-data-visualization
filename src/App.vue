@@ -41,6 +41,7 @@ import search from "./components/search.vue";
 import pagination from "./components/pagination.vue";
 import picture1 from "./components/picture1.vue";
 
+
 export default {
   name: "app",
   components: {

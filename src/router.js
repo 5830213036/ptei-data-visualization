@@ -3,8 +3,7 @@ import Router from 'vue-router'
 import login from "./components/login.vue"
 import secure from "./components/secure.vue"
 import HelloWorld from './components/HelloWorld.vue'
-
-
+import chart from "./components/chart.vue"
 
 import firestore  from './components/firestore.vue'
 
@@ -14,7 +13,8 @@ const routes = [
     { path: '/home', component: HelloWorld },
     { path: '/login', component: login },
     { path: '/firebase', component: firestore },
-    { path: '/secure', component: secure }
+    { path: '/secure', component: secure },
+    { path: '/chart', component: chart}
   ]
 
   const router = new Router({
