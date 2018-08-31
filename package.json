@@ -11,6 +11,7 @@
     "bootstrap-vue": "^2.0.0-rc.11",
     "chart.js": "^2.7.2",
     "firebase": "^5.4.1",
+    "hchs-vue-charts": "^1.2.8",
     "mdbvue": "^4.5.1",
     "vue": "^2.5.17",
     "vue-chartjs": "^3.4.0",

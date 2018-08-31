@@ -1,6 +1,8 @@
 <template>
  <div id="blog">
-        <router-link to="/chart">
+
+
+      
 <div class="container">
   <div class="row">
     <div class="col-sm-8">
@@ -11,12 +13,24 @@
     </div>
   </div>
 </div>
-</router-link>
+
 </div>
 </template>
 
 <script>
     export default {
-        name : 'blog'
+        name : 'blog',
+        data() {
+          return{
+              blog : {
+                title :"",
+              content: ""
+              }
+          }
+        },
+        methods : {
+
+        }
     }
 </script>
+

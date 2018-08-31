@@ -6,10 +6,15 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import BootstrapVue from 'bootstrap-vue'
 import Vuex from 'vuex'
 import VueCharts from 'vue-chartjs'
-import { Bar, Line } from 'vue-chartjs'
+import { Pie, Line } from 'vue-chartjs'
+import "chart.js"
+import "hchs-vue-charts"
+
+Vue.use(window.VueCharts);
 
 
-Vue.use(BootstrapVue, Vuex, VueCharts , {Bar,Line} );
+
+Vue.use(BootstrapVue, Vuex, VueCharts , {Pie,Line} );
 
 
 Vue.config.productionTip = false
