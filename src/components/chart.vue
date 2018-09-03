@@ -1,37 +1,72 @@
+
 <template>
-<div>
-  <h2>Doughnut</h2>
-
-  <div class="card">
-    <chartjs-doughnut v-bind:labels="labels"
-      v-bind:datasets="datasets"
-      v-bind:bind="true"/>
+  <div class="small">
+    <button @click="fillData()">Show</button>
+    <b-card>
+      <line-chart :chart-data="datacollection"></line-chart>
+    </b-card>
+    <b-card>
+      <bar-chart :chart-data="datacollection"></bar-chart>
+    </b-card>
+    <b-card>
+      <doughnut-chart :chart-data="datacollection"></doughnut-chart>
+    </b-card>
+    
   </div>
-</div>
 </template>
-
 <script>
-import {firestore} from '../firebase.js'
+import { firestore } from "../firebase.js";
+import LineChart from "../charts/Line.js"
+import BarChart from "../charts/Bar.js"
+import DoughnutChart from "../charts/Doughnut.js"
+
+
 export default {
+  components: {
+    LineChart,
+    BarChart,
+    DoughnutChart
+  },
   data() {
     return {
-      labels: this.chart1.labels,
-      datasets: [
-        {
-          data: this.label,
-          backgroundColor: ["#b388ff", "#82b1ff", "#80d8ff"],
-          hoverBackgroundColor: ["#673ab7", "#2196f3", "#03a9f4"]
-        }
-      ],
+      datacollection: null
     };
   },
-   firestore(){
-        return{
-          chart1 : firestore.collection('viz').doc('chart1')
-        }
-      }
+  mounted() {
+    this.fillData();
+  },
+  firestore() {
+    return {
+      chart1: firestore.collection("viz").doc("chart1")
+    };
+  },
+  methods: {
+    fillData() {
+      this.datacollection = {
+        labels: this.chart1.label,
+        datasets: [
+          {
+            label: "Data One",
+            backgroundColor: "#f87979",
+            data: this.chart1.label1
+          }
+        ]
+      };
+    },
+    getRandomInt() {
+      return Math.floor(Math.random() * (50 - 5 + 1)) + 5;
+    }
+  }
 };
 </script>
+
+<style>
+.small {
+  max-width: 600px;
+  margin: 150px auto;
+}
+</style>
+
 
 
 
