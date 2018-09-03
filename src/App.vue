@@ -29,21 +29,32 @@
 <picture1/>
 <!--Footer-->
 
-<div class="jumbotron text-center" >
+<div class="jumbotron" >
 <div class="container">
   <div class="row">
     <div class="col-md-6">
       <div class="row">
       <h2>ABOUT US</h2>
-      
-      <p>Aenean vulputate nisl arcu, non consequat risus vulputate sed. Nulla eu sapien condimentum nisi aliquet sodales non et diam. Duis blandit nunc semper rutrum congue. Phasellus sed lacus ut odio vehicula varius. Etiam iaculis feugiat tortor ac ornare.</p>
+        <div >      
+          
+            Phuket is among the world’s finest beach destinations, with fine white sands, 
+            nodding palm trees, glittering seas and lively towns. It has something for any taste and budget, 
+            with hundreds of hotels to choose from, a wide choice of dining and partying options.
+         
+        </div>
     </div>
+    <hr>
     <div class="row">
-      <h2>HOT TAG</h2>
-      <div class="col-sm">
-      <h5>kdmflksmdflakemsdfmkew</h5>
-    </div></div>
+      <h2>HOT TAG</h2>      
     </div>
+    
+    <div class="row">
+      <b-btn class="tag" v-b-tooltip.hover title="Hello Phuket!">#Phuket</b-btn>
+      <b-btn class="tag" v-b-tooltip.hover title="Hello Phuket!">#Phuket</b-btn>
+      <b-btn class="tag" v-b-tooltip.hover title="Hello Phuket!">#Phuket</b-btn>
+    </div>
+    </div>
+
     <div class="col-md">
       <h2>LAST POPULAR</h2>
       <div class="row">
@@ -137,6 +148,14 @@ export default {
   width: 60%;
   
 }
+.tag{
+  margin-right: 10px;
+}
+
+.text{
+  text-align: auto;
+}
+
 
 
 
